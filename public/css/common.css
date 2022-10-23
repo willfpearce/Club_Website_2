@@ -249,7 +249,7 @@ h4 {
 }
 
 .social-buttons > a {
-    transition: filter 0.25s ease;
+    transition: filter 0.15s ease;
 }
 
 .social-buttons > a:hover {
