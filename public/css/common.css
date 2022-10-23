@@ -248,6 +248,14 @@ h4 {
     gap: 10px;
 }
 
+.social-buttons > a {
+    transition: filter 0.25s ease;
+}
+
+.social-buttons > a:hover {
+    filter: brightness(0.75);
+}
+
 .footer-lower {
     background-color: white;
     padding-right: 30px;
