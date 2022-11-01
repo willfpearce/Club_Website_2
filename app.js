@@ -28,11 +28,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.get('/', (req, res) => {
-  res.render('index', { page: 'index' })
-})
-
-app.get('/preview', (req, res) => {
-  res.render('temporary')
+  res.render('index', { page: 'UF OSC | Home ' })
 })
 
 app.post('/auth/login', (req, res) => {
@@ -56,7 +52,7 @@ app.get(`/${config.admin_route}`, (req, res) => {
       app.set('loginError', null)
       return
     }
-    return res.render('temporary')
+    return res.render('admin')
   })(req, res)
 })
 
